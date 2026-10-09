@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Reporter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌦️ Weather Reporter</h1>
+        <p>Real-Time Weather Monitoring System</p>
+
+        <div class="search-box">
+            <input type="text" id="cityInput"
+                   placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="message">Enter a city to check its weather.</p>
+
+        <div class="weather-card">
+            <h2 id="city">--</h2>
+            <div class="icon" id="weatherIcon">🌤️</div>
+            <h1 id="temperature">-- °C</h1>
+            <p id="description">Weather condition</p>
+
+            <div class="details">
+                <div class="detail">
+                    <h3>💧 Humidity</h3>
+                    <p id="humidity">-- %</p>
+                </div>
+
+                <div class="detail">
+                    <h3>💨 Wind Speed</h3>
+                    <p id="wind">-- m/s</p>
+                </div>
+            </div>
+
+            <button id="saveBtn" disabled>
+                Save Weather Reading
+            </button>
+        </div>
+
+        <h2>Recent Saved Readings</h2>
+        <div id="history">
+            <p>No readings saved yet.</p>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
